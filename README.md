@@ -16,6 +16,9 @@ These steps should work for Linux, MacOS, and Windows.
 9. Once you're done, click the PlatformIO icon (little alien guy) and find "Upload". First it will download a dependency (when you're using it for the first time), and then ask you to plug the ATTiny85 in.
 10. It'll take a second to upload all the code, but once it's done, you can unplug the USB, and after plug it back in. It'll take a couple seconds to initialize, this is normal. It's a 3 dollar microcontroller, not a quantum computer :p
 
+    Note: if you're using linux, you may need to copy/create this file: /etc/udev/rules.d/49-micronucleus.rules
+    with the following content: https://github.com/micronucleus/micronucleus/blob/master/commandline/49-micronucleus.rules
+
 # *Getting coding:
 
 To ensure the BadUSB works, you can run "example.cpp". But believe it or not, some of you want to write your own code for it! So let's go over a few basics:
