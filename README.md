@@ -23,10 +23,13 @@ To ensure the BadUSB works, you can run "example.cpp". But believe it or not, so
 # Basic setup:
 
 To import the library that the ATTiny85 uses for HIDi (Human Interface Device injection), we need to add this at the top of the file: 
+
 #include "DigiKeyboard.h"
 
 Once we've got that, it's highly recommended to add a delay in the setup() function to make sure the BadUSB is fully initialized before "typing" away like so:
+
 DigiKeyboard.delay(1000) //delay for 1000 milliseconds or 1 second
+
 
 But now let's get to the fun stuff!
 
