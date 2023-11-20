@@ -4,7 +4,7 @@
 void setup() {
   // put your setup code here, to run once:
   DigiKeyboard.delay(2000);
-  DigiKeyboard.sendKeyStroke(KEY_SPACE, MOD_GUI_LEFT);
+  DigiKeyboard.sendKeyStroke(MOD_GUI_LEFT, KEY_SPACE);
   DigiKeyboard.delay(1000);
   DigiKeyboard.print("terminal");
   DigiKeyboard.sendKeyStroke(KEY_ENTER);
