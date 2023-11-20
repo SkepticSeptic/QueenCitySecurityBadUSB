@@ -18,6 +18,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
     DigiKeyboard.print("echo MaiNfRaMe hAcKeD!");
+    DigiKeyboard.sendKeyStroke(KEY_ENTER);
 }
 
 // put function definitions here:
