@@ -27,11 +27,11 @@ To ensure the BadUSB works, you can run "example.cpp". But believe it or not, so
 
 To import the library that the ATTiny85 uses for HIDi (Human Interface Device injection), we need to add this at the top of the file: 
 
-#include "DigiKeyboard.h"
+```#include "DigiKeyboard.h"```
 
 Once we've got that, it's highly recommended to add a delay in the setup() function to make sure the BadUSB is fully initialized before "typing" away like so:
 
-DigiKeyboard.delay(1000) //delay for 1000 milliseconds or 1 second
+```DigiKeyboard.delay(1000) //delay for 1000 milliseconds or 1 second```
 
 
 But now let's get to the fun stuff!
@@ -63,7 +63,8 @@ For those that are just getting started in security, you could run something lik
 Lastly, there are 2 more cool features I'll discuss, the loop() function and the DigiSpark's built in LED:
 
 The loop() function is pretty self explanatory, repeating whatever's in the function over and over, once the setup() function is complete. This on its own might not look like much, but paired with the DigiSpark's LED, can be used to indicate when the BadUSB is done like so:
-```loop() {
+```
+loop() {
     digitalWrite(0, HIGH);
     delay(300);
     digitalWrite(0, LOW);
