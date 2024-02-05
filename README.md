@@ -38,4 +38,34 @@ But now let's get to the fun stuff!
 
 # Simulating keypresses:
 
-Let's say we want to 
+Let's say you want to simulate a keypress to open up a program launcher in Linux/MacOS, using "windows+space" (with the windows key commonly being referred to as GUI).
+To do this, you can simply type:
+```DigiKeyboard.sendKeyStroke(MOD_GUI_LEFT, KEY_SPACE); //MOD = modifier, GUI = windows/super key, LEFT = the left windows key``` 
+
+Now let's type "terminal" to open up a bash terminal, and execute further commands:
+```DigiKeyboard.print("terminal");```
+
+To continue, we also need to press enter like so:
+```DigiKeyboard.sendKeyStroke(KEY_ENTER);```
+
+But this is a bit of a hassle, so alternatively, you could also use the Java friendly version, println:
+```DigiKeyboard.println("terminal");```
+
+Which would press enter at the end for you.
+
+Now that we're in the terminal, you can apply whatever skills you already have for actual exploitation. This can range to anything from a reverse shell to installing a full bootkit, which will not be discussed here.
+
+For those that are just getting started in security, you could run something like "tree", a command that lists all of the device files in a cool tree-like format, which doesn't do much, but looks pretty cool:
+```DigiKeyboard.println("tree");```
+
+# Extras:
+
+Lastly, there are 2 more cool features I'll discuss, the loop() function and the DigiSpark's built in LED:
+
+The loop() function is pretty self explanatory, repeating whatever's in the function over and over, once the setup() function is complete. This on its own might not look like much, but paired with the DigiSpark's LED, can be used to indicate when the BadUSB is done like so:
+```loop() {
+    digitalWrite(0, HIGH);
+    delay(300);
+    digitalWrite(0, LOW);
+    delay(300);
+}```
