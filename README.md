@@ -15,9 +15,9 @@ These steps should work for Linux, MacOS, and Windows.
 8. Get coding*
 9. Once you're done, click the PlatformIO icon (little alien guy) and find "Upload". First it will download a dependency (when you're using it for the first time), and then ask you to plug the ATTiny85 in.
 10. It'll take a second to upload all the code, but once it's done, you can unplug the USB, and after plug it back in. It'll take a couple seconds to initialize, this is normal. It's a 3 dollar microcontroller, not a quantum computer :p
-
-    Note: if you're using linux, you may need to copy/create this file: /etc/udev/rules.d/49-micronucleus.rules
-    with the following content: https://github.com/micronucleus/micronucleus/blob/master/commandline/49-micronucleus.rules
+# Setting up FAQ/Issues
+ - If you're using linux, you may need to copy/create this file: /etc/udev/rules.d/49-micronucleus.rules with the following content: https://github.com/micronucleus/micronucleus/blob/master/commandline/49-micronucleus.rules
+ - The open source rendition of ```code``` (vscode) doesn't contain the PlatformIO extension due to its closed source dependencies. On Arch Linux this can be resolved with installing microsoft's bin (```yay -S visual-studio-code-bin```), or by downloading it from microsoft on any other distributions
 
 # *Getting coding:
 
