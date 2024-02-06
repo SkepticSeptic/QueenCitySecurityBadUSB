@@ -9,6 +9,7 @@ These steps should work for Linux, MacOS, and Windows.
 2. Then, go to extensions (ctrl+shift+x)
 3. Install the "PlatformIO" extension to interact with the ATTiny85
 4. Open the command pallette (ctrl+shift+p) and type/click PlatformIO:Home
+(if this does not work, just click the platformio alien icon and click create new project)
 5. Create a new project and name it whatever you want, select "Digispark USB (Digistump)"
 6. Once you see your project files, go to the src folder (close to the bottom)
 7. Open up main.cpp
