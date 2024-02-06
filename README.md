@@ -13,7 +13,7 @@ These steps should work for Linux, MacOS, and Windows.
 5. Create a new project and name it whatever you want, select "Digispark USB (Digistump)"
 6. Once you see your project files, go to the src folder (close to the bottom)
 7. Open up main.cpp
-8. Get coding*
+8. Get coding or copy/paste example.cpp to verify*
 9. Once you're done, click the PlatformIO icon (little alien guy) and find "Upload". First it will download a dependency (when you're using it for the first time), and then ask you to plug the ATTiny85 in.
 10. It'll take a second to upload all the code, but once it's done, you can unplug the USB, and after plug it back in. It'll take a couple seconds to initialize, this is normal. It's a 3 dollar microcontroller, not a quantum computer :p
 # Setting up FAQ/Issues
